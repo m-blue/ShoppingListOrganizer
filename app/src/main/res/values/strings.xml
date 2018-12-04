@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShoppingListOrganizer</string>
+    <string-array name="category">
+        <item>Frozen Foods</item>
+        <item>Fresh Produce</item>
+        <item>Lawn/Garden</item>
+    </string-array>
+</resources>
