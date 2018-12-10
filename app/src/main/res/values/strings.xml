@@ -3,6 +3,20 @@
     <string-array name="category">
         <item>Frozen Foods</item>
         <item>Fresh Produce</item>
+        <item>Toys/Games</item>
+        <item>Electronics</item>
+        <item>Automobile</item>
+        <item>Hygiene</item>
+        <item>Dairy Products</item>
+        <item>Medicine</item>
+        <item>Pets</item>
         <item>Lawn/Garden</item>
+        <item>Clothing</item>
+        <item>Outdoor/Fitness</item>
+        <item>Home Decor</item>
+        <item>Alcohol</item>
+        <item>Beverages</item>
+        <item>Appliances</item>
+        <item>Cleaning Products</item>
     </string-array>
 </resources>

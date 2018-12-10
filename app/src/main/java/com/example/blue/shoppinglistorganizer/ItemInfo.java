@@ -44,17 +44,16 @@ public class ItemInfo extends AppCompatActivity {
         });
     }
     boolean CheckData(){
-
         EditText txtName = findViewById(R.id.txtName);
         if(txtName.getText().toString().isEmpty()){
-            txtName.setError("Invalid Name");
+            txtName.setError("Please enter a name");
             txtName.requestFocus();
             return false;
         }
 
         EditText txtPrice = findViewById(R.id.txtPrice);
         if(txtPrice.getText().toString().isEmpty()){
-            txtPrice.setError("Invalid Price");
+            txtPrice.setError("Please enter a price");
             txtPrice.requestFocus();
             return false;
         }

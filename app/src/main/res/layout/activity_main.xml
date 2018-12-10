@@ -8,27 +8,40 @@
 
     <ListView
         android:id="@+id/nameList"
-        android:layout_width="154dp"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="@+id/categoryList">
+        android:layout_width="153dp"
+        android:layout_height="426dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPercentage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </ListView>
 
     <ListView
         android:id="@+id/categoryList"
-        android:layout_width="128dp"
-        android:layout_height="match_parent"
+        android:layout_width="151dp"
+        android:layout_height="426dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPercentage"
         app:layout_constraintStart_toEndOf="@+id/nameList"
-        app:layout_constraintTop_toTopOf="@+id/priceList" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ListView
         android:id="@+id/priceList"
-        android:layout_width="97dp"
-        android:layout_height="match_parent"
+        android:layout_width="81dp"
+        android:layout_height="426dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPercentage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/categoryList"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnNew"
@@ -40,5 +53,71 @@
         android:text="New"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/TextView99"
+        app:layout_constraintTop_toTopOf="@+id/TextView99" />
+
+    <TextView
+        android:id="@+id/TextView99"
+        android:layout_width="39dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Total:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="36dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Tax:"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextView99"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPercentage"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:gravity="bottom|right"
+        android:inputType="numberDecimal"
+        android:text="0.0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotal"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="22dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="%"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtPercentage"
+        app:layout_constraintTop_toTopOf="@+id/txtPercentage" />
 
 </android.support.constraint.ConstraintLayout>

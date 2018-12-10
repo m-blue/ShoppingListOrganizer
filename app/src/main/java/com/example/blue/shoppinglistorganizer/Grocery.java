@@ -11,4 +11,8 @@ public class Grocery {
         category = _category;
         price = _price;
     }
+
+    public String GetName(){
+        return name;
+    }
 }
